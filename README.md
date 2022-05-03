@@ -1,5 +1,5 @@
 # Nombre del proyecto :  WARRIOR
 
-# Integrantes del proyecto: Lopez Bartet Nicolas, Fabrinni Tomas 
+# Integrantes del proyecto: Lopez Bartet Nicolas, Fabbrini Tomas y Hidalgo Joaquin.
 
-# De que trata el proyecto: ....
+# De que trata el proyecto: ...
