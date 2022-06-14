@@ -3,14 +3,6 @@
 -- Model: New Model    Version: 1.0
 -- MySQL Workbench Forward Engineering
 
-SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
-SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
-
--- -----------------------------------------------------
--- Schema Warrior
--- -----------------------------------------------------
-
 -- -----------------------------------------------------
 -- Schema Warrior
 -- -----------------------------------------------------
@@ -23,8 +15,7 @@ USE `Warrior` ;
 CREATE TABLE IF NOT EXISTS `Warrior`.`Tipos De Usuario` (
   `id_TiposDeUsuario` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id_TiposDeUsuario`))
-ENGINE = InnoDB;
+  PRIMARY KEY (`id_TiposDeUsuario`));
 
 
 -- -----------------------------------------------------
@@ -42,8 +33,7 @@ CREATE TABLE IF NOT EXISTS `Warrior`.`Usuario` (
     FOREIGN KEY (`Tipo_Usuario`)
     REFERENCES `Warrior`.`Tipos De Usuario` (`id_TiposDeUsuario`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+    ON UPDATE NO ACTION);
 
 
 -- -----------------------------------------------------
@@ -55,8 +45,7 @@ CREATE TABLE IF NOT EXISTS `Warrior`.`Producto` (
   `Tipo_Producto` VARCHAR(45) NOT NULL,
   `Precio` DECIMAL NOT NULL,
   `Foto_Producto` BLOB NOT NULL,
-  PRIMARY KEY (`id_Producto`))
-ENGINE = InnoDB;
+  PRIMARY KEY (`id_Producto`));
 
 
 -- -----------------------------------------------------
@@ -68,8 +57,7 @@ CREATE TABLE IF NOT EXISTS `Warrior`.`Peleas` (
   `Perdidas` INT NOT NULL,
   `Empatadas` INT NOT NULL,
   `Sin Resultado` INT NOT NULL,
-  PRIMARY KEY (`id_Peleas`))
-ENGINE = InnoDB;
+  PRIMARY KEY (`id_Peleas`));
 
 
 -- -----------------------------------------------------
@@ -93,10 +81,4 @@ CREATE TABLE IF NOT EXISTS `Warrior`.`Competidor` (
     FOREIGN KEY (`id_Usuario`)
     REFERENCES `Warrior`.`Usuario` (`id_Usuario`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+    ON UPDATE NO ACTION);
