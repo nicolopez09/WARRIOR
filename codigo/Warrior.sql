@@ -6,7 +6,7 @@
 -- -----------------------------------------------------
 -- Schema Warrior
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `Warrior`;
+CREATE SCHEMA IF NOT EXISTS `Warrior` DEFAULT CHARACTER SET utf8;
 USE `Warrior` ;
 
 -- -----------------------------------------------------
