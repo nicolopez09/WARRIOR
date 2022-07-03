@@ -32,8 +32,8 @@ CREATE TABLE IF NOT EXISTS `Warrior`.`Usuario` (
   CONSTRAINT `Tipo_Usuario`
     FOREIGN KEY (`Tipo_Usuario`)
     REFERENCES `Warrior`.`Tipos De Usuario` (`id_TiposDeUsuario`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);
 
 
 -- -----------------------------------------------------
@@ -75,10 +75,10 @@ CREATE TABLE IF NOT EXISTS `Warrior`.`Competidor` (
   CONSTRAINT `Total_Peleas`
     FOREIGN KEY (`Total_Peleas`)
     REFERENCES `Warrior`.`Peleas` (`id_Peleas`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
   CONSTRAINT `id_Usuario`
     FOREIGN KEY (`id_Usuario`)
     REFERENCES `Warrior`.`Usuario` (`id_Usuario`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);
