@@ -6,13 +6,13 @@
 -- -----------------------------------------------------
 -- Schema Warrior
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `Warrior` DEFAULT CHARACTER SET utf8;
+CREATE SCHEMA `Warrior` DEFAULT CHARACTER SET utf8;
 USE `Warrior` ;
 
 -- -----------------------------------------------------
 -- Table `Warrior`.`Tipos De Usuario`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Warrior`.`Tipos De Usuario` (
+CREATE TABLE `Warrior`.`Tipos De Usuario` (
   `id_TiposDeUsuario` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id_TiposDeUsuario`));
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `Warrior`.`Tipos De Usuario` (
 -- -----------------------------------------------------
 -- Table `Warrior`.`Usuario`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Warrior`.`Usuario` (
+CREATE TABLE `Warrior`.`Usuario` (
   `id_Usuario` INT NOT NULL AUTO_INCREMENT,
   `Nombre_Usuario` VARCHAR(45) NOT NULL,
   `Descripción` VARCHAR(255) NULL,
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `Warrior`.`Usuario` (
 -- -----------------------------------------------------
 -- Table `Warrior`.`Producto`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Warrior`.`Producto` (
+CREATE TABLE `Warrior`.`Producto` (
   `id_Producto` INT NOT NULL AUTO_INCREMENT,
   `Nombre_Producto` VARCHAR(45) NOT NULL,
   `Tipo_Producto` VARCHAR(45) NOT NULL,
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `Warrior`.`Producto` (
 -- -----------------------------------------------------
 -- Table `Warrior`.`Peleas`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Warrior`.`Peleas` (
+CREATE TABLE `Warrior`.`Peleas` (
   `id_Peleas` INT NOT NULL AUTO_INCREMENT,
   `Ganadas` INT NOT NULL,
   `Perdidas` INT NOT NULL,
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `Warrior`.`Peleas` (
 -- -----------------------------------------------------
 -- Table `Warrior`.`Competidor`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Warrior`.`Competidor` (
+CREATE TABLE `Warrior`.`Competidor` (
   `id_Competidor` INT NOT NULL AUTO_INCREMENT,
   `id_Usuario` INT NOT NULL,
   `Descripción_Competidor` VARCHAR(255) NULL,
