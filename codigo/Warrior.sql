@@ -24,6 +24,7 @@ CREATE TABLE `Warrior`.`Tipos De Usuario` (
 CREATE TABLE `Warrior`.`Usuario` (
   `id_Usuario` INT NOT NULL AUTO_INCREMENT,
   `Nombre_Usuario` VARCHAR(45) NOT NULL,
+  `Contraseña` VARCHAR(45) NOT NULL,
   `Descripción` VARCHAR(255) NULL,
   `Foto_Perfil` BLOB NULL,
   `Tipo_Usuario` INT NOT NULL,
