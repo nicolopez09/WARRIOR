@@ -1,4 +1,5 @@
 * {
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,9 +13,9 @@
   }
   
   .form-login {
-    width: 400px;
+    width: 500px;
     height: 340px;
-    background: rgb(179, 179, 29);
+    background: rgba(236, 224, 43, 0.966);
     margin: auto;
     margin-top: 180px;
     box-shadow: 7px 13px 37px #000;
@@ -41,6 +42,12 @@
     color: black;
     font-size: 14px;
     font-weight: bold;
+  }
+  .form-login img{
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 50px;
   }
   
   .buttons {
