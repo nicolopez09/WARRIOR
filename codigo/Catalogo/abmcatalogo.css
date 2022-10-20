@@ -1,0 +1,142 @@
+body{
+	background-image: url(img/warrior.png);
+	background-color: rgb(39, 37, 37);
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0;
+}
+nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: rgb(179, 179, 29);
+	font-size: 20px;
+	margin-top: 50px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: black;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: #434343;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: #c09878;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+#html{
+	margin: auto;
+	padding: 20px;
+	max-width: 900px;
+	background: gray;
+    color: black;
+}
+.logo img{
+    height: 100px;
+    margin-right: 10px;
+}
+
+table.tablaproductos {
+  border: 6px solid #000000;
+  background-color: rgba(235,248,44,255)  ;
+  width: 100%;
+  height: 199px;
+  text-align: center;
+}
+table.tablaproductos td, table.tablaproductos th {
+  border: 1px solid #000000;
+  padding: 4px 4px;
+}
+table.tablaproductos tbody td {
+  font-size: 13px;
+  color: #000000;
+}
+table.tablaproductos tr:nth-child(even) {
+  background: rgba(235,248,44,255)  ;
+}
+table.tablaproductos thead {
+  background: #5D5D5D;
+  background: -moz-linear-gradient(top, #858585 0%, #6d6d6d 66%, #5D5D5D 100%);
+  background: -webkit-linear-gradient(top, #858585 0%, #6d6d6d 66%, #5D5D5D 100%);
+  background: linear-gradient(to bottom, #858585 0%, #6d6d6d 66%, #5D5D5D 100%);
+}
+table.tablaproductos thead th {
+  font-size: 17px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+  border-left: 2px solid #5D5D5D;
+}
+table.tablaproductos thead th:first-child {
+  border-left: none;
+}
+
+table.tablaproductos tfoot {
+  font-size: 16px;
+  font-weight: bold;
+  color: #F0F0F0;
+  background: #5D5D5D;
+  background: -moz-linear-gradient(top, #858585 0%, #6d6d6d 66%, #5D5D5D 100%);
+  background: -webkit-linear-gradient(top, #858585 0%, #6d6d6d 66%, #5D5D5D 100%);
+  background: linear-gradient(to bottom, #858585 0%, #6d6d6d 66%, #5D5D5D 100%);
+}
+table.tablaproductos tfoot td {
+  font-size: 16px;
+}
+table.tablaproductos tfoot .links {
+  text-align: right;
+}
+table.tablaproductos tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #5D5D5D;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.productos{
+	padding: 0px 105px 0px 105px;
+}
+.menu-horizontal .logo{
+ padding: 25px 10px 0px 0px;
+ width: 25%;
+ height: auto;
+}
+.buttons {
+  width: 100%;
+  height: 40px;
+  background: rgb(143, 143, 143);
+  border: black;
+  color: black;
+  border: 1px solid black;
+
+  margin-bottom: 10px;
+}
+.buttons{
+    width: 50%;
+    height: 400px;
+    background: gray;
+    margin-bottom: 16px;
+  }

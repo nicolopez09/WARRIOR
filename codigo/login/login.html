@@ -2,19 +2,40 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>WARRIOR WEB LOGIN</title>
+    <title>Formulario Login</title>
     <link rel="stylesheet" href="login.css">
   </head>
   <body>
-    <section class="form-login">
-      <div> 
-      <h5>WARRIOR</h5>
+
+    <div>
+    <form class="form-login" action="login.php" method="POST">
+  <div class="login">
+  <h5>Formulario Login</h5>
+
       <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
-      <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
+      <input class="controls" type="password" name="contrasenia" value="" placeholder="Contraseña">
       <input class="buttons" type="submit" name="" value="Ingresar">
-      <p><a href="file:///C:/Users/Usuario/OneDrive/Documentos/GitHub/WARRIOR/codigo/login/login.html/a.txt" target="_blank">Términos y condiciones</a></p>
-      <img src="warrior.png" alt="Logo Warrior">
-    </section>
-  </div>
+      <button id="open">
+        Términos y Condiciones
+      </button>
+      </div>
+
+      <div class="imglogin">
+        <img src="warrior.png" alt="logo ">
+    </div>
+
+    </div>
+    </form>
+    <div id="modal_container" class="modal-container">
+        <div class="modal">
+          <h1>WARRIOR</h1>
+          <p>
+            Estos son los términos y Condiciones
+          </p>
+          <button id="close">Cerrar</button>
+        </div>
+
+      </div>
+    <script src="login.js"></script>
   </body>
-</html>  
+</html>

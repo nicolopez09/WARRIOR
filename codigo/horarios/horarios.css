@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+
+body{
+	background-color: rgb(39, 37, 37);
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0;
+}
+nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: rgba(235,248,44,255)
+	;
+	font-size: 20px;
+	margin-top: 50px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: black;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: #434343;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: #c09878;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+#html{
+	margin: auto;
+	padding: 50px;
+	max-width: 900px;
+	background: gray;
+    color: black;
+}
+.logo img{
+    height: 100px;
+    margin-right: 10px;
+}
+.horas{
+	max-width: 850px;
+	padding: 0px 50px 0px 10px;
+}

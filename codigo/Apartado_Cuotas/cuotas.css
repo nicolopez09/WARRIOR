@@ -16,7 +16,8 @@ body{
 nav{
 	max-width: 900px;
 	margin: auto;
-	background-color: rgb(179, 179, 29);
+	background-color: rgba(235,248,44,255)
+	;
 	font-size: 20px;
 	margin-top: 50px;
 }
