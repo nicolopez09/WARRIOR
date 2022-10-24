@@ -4,8 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Menú Desplegable</title>
+	<title>Pagina principal</title>
 	<link rel="stylesheet" href="estilo.css">
+    <link rel="hoja de estilo" href="css/reset.css">
+    <link rel="hoja de estilo" href="css/animate.css">
+    <link rel="hoja de estilo" href="css/styles.css">
 </head>
 
 <body>
@@ -45,24 +48,23 @@
 		</ul>
 	</nav>
 
-	<section id="html">
-		<h2>Warrior</h2>
-		<h2>Foro</h2>
-		<table border="0" width="90%" cellspacing="2" cellpadding="2" align="center">
-			<tbody>
-			<tr>
-			<td valign="top" width="25%"><strong><a name="&lt;?=$id?&gt;"></a>autor:<!--?=$autor? &gt;&lt;/a&gt;&lt;/b&gt;&lt;br&gt; 
-							&lt;font size="-2"&gt;Enviado el : &lt;?=$enviado?--></strong></td>
-			<td><strong>titulo:</strong><!--?=$mensaje?--></td>
-			</tr>
-			<tr>
-			<td colspan="2" height="5">&nbsp;mensaje:</td>
-			</tr>
-			</tbody>
-			</table>
-		
+<div>
+    
+    <div class="html">
+        <h2>Foro</h2>
+        <table class="darkTable">
+            <tbody>
+            <tr>
+            <td>Autor</td>
+            <td><input name="autor" type="text" /></td>
+            <td>Titulo</td>
+            <td><input name="titulo" type="text" /></td>
+            <td>Mensaje</td>
+            <td><textarea name="mensaje" cols="50" rows="5"></textarea></td>
+            </tr>
+            </tbody>
+            </table>
             <input class="boton_personalizado" type="submit" name="" value="Ingresar">
-
-	</section>
+        </div>
 </body>
 </html>
