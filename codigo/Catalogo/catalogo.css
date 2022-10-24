@@ -8,7 +8,7 @@ body{
 nav{
 	max-width: 900px;
 	margin: auto;
-	background-color: rgb(179, 179, 29);
+	background-color: #EBF82C;
 	font-size: 20px;
 	margin-top: 50px;
 }
@@ -61,7 +61,7 @@ nav{
 
 table.tablaproductos {
   border: 6px solid #000000;
-  background-color: #B3B31D;
+  background-color: #EBF82C;
   width: 100%;
   height: 199px;
   text-align: center;
@@ -75,7 +75,7 @@ table.tablaproductos tbody td {
   color: #000000;
 }
 table.tablaproductos tr:nth-child(even) {
-  background: #B3B31D;
+  background: #EBF82C;
 }
 table.tablaproductos thead {
   background: #5D5D5D;

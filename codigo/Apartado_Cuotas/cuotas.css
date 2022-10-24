@@ -7,7 +7,6 @@
 }
 
 body{
-	background-image: url(img/warrior.png);
 	background-color: rgb(39, 37, 37);
     background-size: cover;
     font-family: sans-serif;
@@ -58,7 +57,7 @@ nav{
 
 #html{
 	margin: auto;
-	padding: 20px;
+	padding: 50px;
 	max-width: 900px;
 	background: gray;
     color: black;
@@ -66,4 +65,8 @@ nav{
 .logo img{
     height: 100px;
     margin-right: 10px;
+}
+.horas{
+	max-width: 850px;
+	padding: 0px 50px 0px 10px;
 }

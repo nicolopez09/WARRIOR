@@ -7,7 +7,6 @@
 }
 
 body{
-	background-image: url(img/warrior.png);
 	background-color: rgb(39, 37, 37);
     background-size: cover;
     font-family: sans-serif;
@@ -58,7 +57,7 @@ nav{
 
 #html{
 	margin: auto;
-	padding: 20px;
+	padding: 50px;
 	max-width: 900px;
 	background: gray;
     color: black;
@@ -67,3 +66,18 @@ nav{
     height: 100px;
     margin-right: 10px;
 }
+.horas{
+	max-width: 850px;
+	padding: 0px 50px 0px 10px;
+}
+ .boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 6px;
+    border: 2px solid #EBF82C;
+    margin-left: 77%;
+  }  
