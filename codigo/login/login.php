@@ -19,7 +19,7 @@ $count = mysqli_num_rows($resultado);
 
 
 if ($count == 1){
-    header("Location: https://warriorbootcamp.000webhostapp.com/Pagina_principal/pag1.html");
+    header("Location: https://warriorbootcamp.000webhostapp.com/principal/principal.html");
 }
 
 else{
