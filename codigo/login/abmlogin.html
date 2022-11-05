@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+
+    <div>
+    <form class="form-login" action="login.php" method="POST">
+  <div class="login">
+  <h5>Carga de Usuarios</h5>
+
+      <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
+      <input class="controls" type="password" name="contrasenia" value="" placeholder="Contraseña">
+      <input class="buttons" type="submit" name="" value="Ingresar">
+     
+      </div>
+
+      <button id="open">
+        Términos y Condiciones
+      </button>
+      <div id="modal_container" class="modal-container">
+          <div class="modal">
+            <h1>WARRIOR</h1>
+            <p>
+              Estos son los términos y Condiciones
+            </p>
+            <button id="close">Cerrar</button>
+    </div>
+    </div>
+    </form>
+    
+    
+     
+      
+    <script src="login.js"></script>
+  </body>
+</html>

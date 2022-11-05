@@ -75,10 +75,9 @@ display: flex;
   }
 
   .form-login {
-    width: 550px;
+    width: 450px;
     height: 370px;
-    background: rgba(235,248,44,255)
-    ;
+    background: rgba(235,248,44,255);
     margin: auto;
     margin-top: 180px;
     box-shadow: 7px 13px 37px rgb(0, 0, 0);
@@ -132,25 +131,3 @@ display: flex;
 
   .imglogin{
   padding: 0px 30px 60px 360px;}
-
-
-  
-    .fcc-btn{
-      background-color: rgb(129, 127, 127);
-      color: black;
-      padding: 20px 250px;
-      height: 10%;
-      width: 30%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 7px 13px 20px rgb(27, 21, 21);
-        
-    }
-    
-    .fcc-btn:hover {
-      background-color: #000000;
-      color:rgba(221, 187, 77, 0.966);
-      
-    }
-    
