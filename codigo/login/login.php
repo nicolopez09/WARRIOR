@@ -19,7 +19,12 @@ $count = mysqli_num_rows($resultado);
 
 
 if ($count == 1){
+    
     header("Location: https://warriorbootcampweb.000webhostapp.com/principal/principal.html");
+    if($usuario == "root" and $contrasenia == "Admin123"){
+        header("Location: https://warriorbootcampweb.000webhostapp.com/principal/abmprincipal.html");
+
+    }
 }
 
 else{

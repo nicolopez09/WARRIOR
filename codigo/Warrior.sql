@@ -97,3 +97,11 @@ CREATE TABLE `Warrior`.`foro` (
   `ult_respuesta` datetime default NULL,
   KEY `id` (`id`)
 ) TYPE=MyISAM;
+
+-- -----------------------------------------------------
+-- Table `Warrior`.`horarios`
+-- -----------------------------------------------------
+CREATE TABLE `Warrior`.`horarios` (
+`id` int(7) NOT NULL auto_increment PRIMARY KEY,
+`Foto_Producto` BLOB NOT NULL,
+)
