@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+	color: #000000;
+}
+
+body{
+	background-color: rgb(39, 37, 37);
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0;
+}
+nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: rgba(235,248,44,255)
+	;
+	font-size: 20px;
+	margin-top: 50px;
+}
+
+
+#html{
+	margin: auto;
+	padding: 50px;
+	max-width: 900px;
+	background: gray;
+    color: black;
+}
+table.darkTable {
+    font-family: "Arial Black", Gadget, sans-serif;
+    border: 2px solid #000000;
+    background-color: #EBF82C;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table.darkTable td, table.darkTable th {
+    border: 1px solid #000000;
+    padding: 3px 2px;
+  }
+  table.darkTable tbody td {
+    font-size: 13px;
+    color: #000000;
+  }
+  table.darkTable tr:nth-child(even) {
+    background: #EBF82C;
+  }
+  table.darkTable thead {
+    background: #000000;
+    border-bottom: 3px solid #000000;
+  }
+  table.darkTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #EBF82C;
+    text-align: center;
+    border-left: 2px solid #4A4A4A;
+  }
+  table.darkTable thead th:first-child {
+    border-left: none;
+  }
+  
+  table.darkTable tfoot td {
+    font-size: 12px;
+  }
