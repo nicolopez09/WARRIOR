@@ -102,7 +102,8 @@ table.darkTable {
     background-color: #000000;
     border-radius: 6px;
     border: 2px solid #EBF82C;
-    margin-left: 93.5%;
+    margin-left: 92.5%;
+    margin-top: 15px;
 }
 .boton{
   color: #000000;

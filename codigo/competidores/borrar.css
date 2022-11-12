@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edeef6;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+button {
+  background-color: #000000;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 25px;
+}
+
+.modal-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fff;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal h1 {
+  margin: 0;
+}
+
+.modal p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: arial;
+    background-image: url();
+    background-color: rgb(39, 37, 37);
+display: flex;
+  }
+
+  .form-login {
+    width: 450px;
+    height: 240px;
+    background: rgba(235,248,44,255);
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px rgb(0, 0, 0);
+    padding: 20px 30px;
+    border-top: 4px solid black;
+    color: rgb(0, 0, 0);
+  }
+
+  .form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+  }
+
+  .controls {
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: grey;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(39, 37, 37);
+  }
+
+  .buttons {
+    width: 100%;
+    height: 40px;
+    background: rgb(39, 37, 37);
+    margin-bottom: 16px;
+    color: gray;
+  }
+
+  .form-login p{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+
+  .form-login a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .form-login a:hover {
+    text-decoration: underline;
+  }
+
+  .imglogin{
+  padding: 0px 30px 60px 360px;}

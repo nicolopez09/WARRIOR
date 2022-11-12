@@ -4,13 +4,13 @@ $usuario= $_POST['usuario'];
 
 $contrasenia= $_POST['contrasenia'];
 
-$nombreBADA = "id19615577_warrior";
+$nombreBADA = "id19746717_warriorwebdb";
 
 $direccion = "localhost";
 
-$link = mysqli_connect($direccion, "id19615577_root123", "Nq=h!9D>bAG@tQi4", $nombreBADA);
+$link = mysqli_connect($direccion, "id19746717_warriorroot", "s=<^z4m)_ow42Ye!", $nombreBADA);
 
-$query = "SELECT * FROM Usuario where Nombre_Usuario = '$usuario' and Contraseña = '$contrasenia';";
+$query = "SELECT * FROM Usuario where Nombre_Usuario = '$usuario' and contrasenia = '$contrasenia';";
 
 $resultado = mysqli_query($link, $query);
 
