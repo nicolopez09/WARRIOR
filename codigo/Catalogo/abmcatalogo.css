@@ -118,6 +118,8 @@ table.tablaproductos tfoot .links a{
 }
 .productos{
 	padding: 0px 105px 0px 105px;
+  background-color: gray;
+  color: #000000;
 }
 .menu-horizontal .logo{
  padding: 25px 10px 0px 0px;
