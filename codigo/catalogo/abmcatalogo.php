@@ -19,7 +19,7 @@ $cargaproducto;
 header ("Location:https://warriorbootcampweb.000webhostapp.com/catalogo/abmcatalogo.html");
 
 
-$result_idgroup = mysqli_query($enlace, "SELECT id_producto from catalogo");
+$result_idgroup = mysqli_query($enlace, "SELECT nombre from catalogo");
 $idgroup = mysqli_fetch_row($result_idgroup);
 if ($result_idgroup == 1){
 

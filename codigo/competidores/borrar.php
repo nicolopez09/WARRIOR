@@ -6,23 +6,23 @@ $direccion = "localhost";
 
 
 $link = mysqli_connect($direccion, "id19615577_root123", "Nq=h!9D>bAG@tQi4", $nombreBADA);
-$query = "SELECT id_catalogo FROM catalogo";
+$query = "SELECT id_competidores FROM competidores";
 $resultado = mysqli_query($link, $query);
 $count = mysqli_num_rows($resultado);
-$borrar_usuario = "DELETE * from catalogo where id_catalogo = '$id';";
+$borrar_usuario = "DELETE * from competidores where id_competidor = '$id';";
 
 $deletear_usuario = mysqli_query($enlace, $borrar_usuario);
 
 if ($count == 1){
     
     $deletear_usuario;
-    header("Location: https://warriorbootcampweb.000webhostapp.com/catalogo/abmcatalogo.html");
+    header("Location: https://warriorbootcampweb.000webhostapp.com/competidores/abmcompetidores.html");
 
     }
 
 
 else{
-    echo "<h1><center>Ese numero de producto no existe</center></h1>";
+    echo "<h1><center>Ese numero de contacto no existe</center></h1>";
 }
 
 

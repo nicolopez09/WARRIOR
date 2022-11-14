@@ -17,8 +17,7 @@ body{
 nav{
 	max-width: 900px;
 	margin: auto;
-	background-color: rgba(235,248,44,255)
-	;
+	background-color: rgba(235,248,44,255);
 	font-size: 20px;
 	margin-top: 50px;
 }
@@ -79,8 +78,8 @@ table.darkTable {
   border-collapse: collapse;
 }
 table.darkTable td, table.darkTable th {
-  border: 1px solid #4A4A4A;
-  padding: 3px 2px;
+  border: 1px solid #000000;
+  padding: 4px 4px;
 }
 table.darkTable tbody td {
   font-size: 13px;
@@ -122,4 +121,13 @@ table.darkTable tfoot td {
     margin-left: 89.5%;
     margin-top: 15px;
     
+}
+.buttons {
+  width: 50%;
+  height: 40px;
+  background: rgb(143, 143, 143);
+  border: black;
+  color: black;
+  border: 1px solid black;
+  margin-bottom: 1
 }

@@ -4,8 +4,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Open Sans';
+  color: #000000;
 }
-
 body{
 	background-image: url(warrior.png);
 	background-color: rgb(39, 37, 37);
@@ -73,7 +73,6 @@ table.darkTable {
 	border: 2px solid #000000;
 	background-color: #EBF82C;
 	width: 100%;
-	height: 200px;
 	text-align: center;
 	border-collapse: collapse;
   }

@@ -104,13 +104,15 @@ display: flex;
     color: black;
     font-size: 14px;
     font-weight: bold;
+    background-color: rgb(39, 37, 37);
   }
 
   .buttons {
     width: 100%;
     height: 40px;
-    background: gray;
+    background: rgb(39, 37, 37);
     margin-bottom: 16px;
+    color: gray;
   }
 
   .form-login p{

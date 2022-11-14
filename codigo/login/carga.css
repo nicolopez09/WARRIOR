@@ -76,7 +76,7 @@ display: flex;
 
   .form-login {
     width: 450px;
-    height: 370px;
+    height: 270px;
     background: rgba(235,248,44,255);
     margin: auto;
     margin-top: 180px;
@@ -104,14 +104,17 @@ display: flex;
     color: black;
     font-size: 14px;
     font-weight: bold;
+    background-color: rgb(39, 37, 37);
   }
 
   .buttons {
     width: 100%;
     height: 40px;
-    background: gray;
+    background: rgb(39, 37, 37);
     margin-bottom: 16px;
+    color: gray;
   }
+
 
   .form-login p{
     height: 40px;

@@ -4,6 +4,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Open Sans';
+  color: #000000;
 }
 
 body{
@@ -12,6 +13,7 @@ body{
     background-size: cover;
     font-family: sans-serif;
     margin: 0;
+	color: #000000;
 }
 nav{
 	max-width: 900px;
@@ -143,4 +145,5 @@ table.darkTable {
     border-radius: 6px;
     border: 2px solid #EBF82C;
     margin-left: 88.3%;
+	margin-top: 15px;
 }
