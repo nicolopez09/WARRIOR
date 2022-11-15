@@ -13,7 +13,7 @@ $carga=mysqli_query($enlace, $ingresar);
 
 $carga;
 
-header ("Location:https://warriorbootcampweb.000webhostapp.com/horarios/abmrutinas.html");
+header ("Location:http://warriorweb.infinityfreeapp.com/horarios/abmrutinas.html");
 
 
         ?>

@@ -13,7 +13,7 @@ $cargaproducto=mysqli_query($enlace, $ingresarproducto);
 
 $cargaproducto;
 
-header ("Location:https://warriorbootcampweb.000webhostapp.com/contactos/abmcontactos.html");
+header ("Location:http://warriorweb.infinityfreeapp.com/contactos/abmcontactos.html");
 
 
 $result_idgroup = mysqli_query($enlace, "SELECT telefono from contactos");

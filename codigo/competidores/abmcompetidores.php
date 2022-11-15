@@ -19,7 +19,7 @@ $cargaproducto=mysqli_query($enlace, $ingresarproducto);
 
 $cargaproducto;
 
-header ("Location:https://warriorbootcampweb.000webhostapp.com/competidores/abmcompetidores.html");
+header ("Location:http://warriorweb.infinityfreeapp.com/competidores/abmcompetidores.html");
 
 
 $result_idgroup = mysqli_query($enlace, "SELECT nombre from competidores");

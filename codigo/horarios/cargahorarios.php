@@ -11,7 +11,7 @@ $cargaproducto=mysqli_query($enlace, $ingresarproducto);
 
 $cargaproducto;
 
-header ("Location:https://warriorbootcampweb.000webhostapp.com/rutinas/abmrutinas.html");
+header ("Location:http://warriorweb.infinityfreeapp.com/rutinas/abmrutinas.html");
 
 $result_idgroup = mysqli_query($enlace, "SELECT id_horarios from horarios");
 $idgroup = mysqli_fetch_row($result_idgroup);

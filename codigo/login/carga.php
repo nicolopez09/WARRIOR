@@ -22,7 +22,7 @@ if ($count == 1){
 
 else{
     $cargar_usuario;
-    header("Location: https://warriorbootcampweb.000webhostapp.com/login/loginab.html");
+    header("Location: http://warriorweb.infinityfreeapp.com/login/loginab.html");
 
 }
 

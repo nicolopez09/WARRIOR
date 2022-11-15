@@ -16,7 +16,7 @@ $deletear_usuario = mysqli_query($link, $borrar_usuario);
 if ($count == 1){
     
     $deletear_usuario;
-    header("Location: https://warriorbootcampweb.000webhostapp.com/cuotas/abmcuotas.html");
+    header("Location: http://warriorweb.infinityfreeapp.com/cuotas/abmcuotas.html");
 
     }
 
