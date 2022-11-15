@@ -7,10 +7,10 @@ $direccion = "localhost";
 
 
 $link = mysqli_connect($direccion, "id19615577_root123", "Nq=h!9D>bAG@tQi4", $nombreBADA);
-$query = "SELECT * FROM Usuario where Nombre_Usuario = '$usuario';";
+$query = "SELECT * FROM Usuario where usuario = '$usuario';";
 $resultado = mysqli_query($link, $query);
 $count = mysqli_num_rows($resultado);
-$nuevo_usuario = "INSERT INTO Usuarios VALUES( '$usuario', '$contrasenia');";
+$nuevo_usuario = "INSERT INTO Usuario (usuario, contrasenia) VALUES( '$usuario', '$contrasenia');";
 $cargar_usuario = mysqli_query($link, $nuevo_usuario);
 
 if ($count == 1){

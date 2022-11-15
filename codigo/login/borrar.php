@@ -6,10 +6,10 @@ $direccion = "localhost";
 
 
 $link = mysqli_connect($direccion, "id19615577_root123", "Nq=h!9D>bAG@tQi4", $nombreBADA);
-$query = "SELECT * FROM Usuario where Nombre_Usuario = '$usuario';";
+$query = "SELECT * FROM Usuario where usuario = '$usuario';";
 $resultado = mysqli_query($link, $query);
 $count = mysqli_num_rows($resultado);
-$borrar_usuario = "DELETE * from Usuarios where Nombre_Usuario = '$usuario';";
+$borrar_usuario = "DELETE * from Usuario where usuario = '$usuario';";
 
 $deletear_usuario = mysqli_query($enlace, $borrar_usuario);
 

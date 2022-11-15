@@ -10,7 +10,7 @@ $direccion = "localhost";
 
 $link = mysqli_connect($direccion, "id19615577_root123", "Nq=h!9D>bAG@tQi4", $nombreBADA);
 
-$query = "SELECT * FROM Usuario where Nombre_Usuario = '$usuario' and Contraseña = '$contrasenia';";
+$query = "SELECT * FROM Usuario where usuario = '$usuario' and contrasenia = '$contrasenia';";
 
 $resultado = mysqli_query($link, $query);
 

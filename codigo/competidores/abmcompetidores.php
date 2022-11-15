@@ -12,7 +12,7 @@ $sin_resultado= $_POST['sin_resultado'];
 $nombrebada='id19746717_warriorwebdb';
 
 $enlace=mysqli_connect('localhost', 'id19746717_warriorroot', 's=<^z4m)_ow42Ye!', $nombrebada);
-$ingresarproducto='INSERT INTO competidores (foto, nombre, altura, alcance, peleas, ganadas, perdidas, empatadas, sin_resultado)VALUES ("$foto","$nombre","$altura","$alcance","$peleas","$ganadas","$perdidas","$empatadas","$sin_resultado");';
+$ingresarproducto='INSERT INTO competidores (foto, nombre, altura, alcance, peleas, ganadas, perdidas, empatadas, sin_resultado)VALUES ('$foto','$nombre','$altura','$alcance','$peleas','$ganadas','$perdidas','$empatadas','$sin_resultado');';
 
 
 $cargaproducto=mysqli_query($enlace, $ingresarproducto);

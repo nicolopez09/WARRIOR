@@ -8,7 +8,7 @@ $link= $_POST['link'];
 $nombrebada='id19746717_warriorwebdb';
 
 $enlace=mysqli_connect('localhost', 'id19746717_warriorroot', 's=<^z4m)_ow42Ye!', $nombrebada);
-$ingresarproducto='INSERT INTO rutinas (link, producto)VALUES ("$link","$producto");';
+$ingresarproducto='INSERT INTO rutinas (link, producto)VALUES ('$link','$producto');';
 
 
 $cargaproducto=mysqli_query($enlace, $ingresarproducto);

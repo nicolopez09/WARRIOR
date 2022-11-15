@@ -6,7 +6,7 @@ $telefono= $_POST['telefono'];
 $nombrebada='id19746717_warriorwebdb';
 
 $enlace=mysqli_connect('localhost', 'id19746717_warriorroot', 's=<^z4m)_ow42Ye!', $nombrebada);
-$ingresarproducto='INSERT INTO contactos (profesional, email, telefono)VALUES ("$profesional","$email","$telefono");';
+$ingresarproducto='INSERT INTO contactos (profesional, email, telefono)VALUES ('$profesional','$email','$telefono');';
 
 
 $cargaproducto=mysqli_query($enlace, $ingresarproducto);

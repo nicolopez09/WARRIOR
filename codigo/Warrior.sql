@@ -10,77 +10,48 @@ CREATE SCHEMA `Warrior` DEFAULT CHARACTER SET utf8;
 USE `Warrior` ;
 
 -- -----------------------------------------------------
--- Table `Warrior`.`Tipos De Usuario`
--- -----------------------------------------------------
-CREATE TABLE `Warrior`.`Tipos De Usuario` (
-  `id_TiposDeUsuario` INT NOT NULL AUTO_INCREMENT,
-  `Nombre` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id_TiposDeUsuario`));
-
-
--- -----------------------------------------------------
 -- Table `Warrior`.`Usuario`
 -- -----------------------------------------------------
 CREATE TABLE `Warrior`.`Usuario` (
-  `id_Usuario` INT NOT NULL AUTO_INCREMENT,
-  `Nombre_Usuario` VARCHAR(45) NOT NULL,
-  `Contraseña` VARCHAR(45) NOT NULL,
-  `Descripción` VARCHAR(255) NULL,
-  `Foto_Perfil` BLOB NULL,
-  `Tipo_Usuario` INT NOT NULL,
-  PRIMARY KEY (`id_Usuario`),
-  INDEX `Tipo_Usuario_idx` (`Tipo_Usuario` ASC),
-  CONSTRAINT `Tipo_Usuario`
-    FOREIGN KEY (`Tipo_Usuario`)
-    REFERENCES `Warrior`.`Tipos De Usuario` (`id_TiposDeUsuario`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE);
+  `id_usuario` INT NOT NULL AUTO_INCREMENT,
+  `usuario` VARCHAR(45) NOT NULL,
+  `contrasenia` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id_Usuario`));
 
 
 -- -----------------------------------------------------
 -- Table `Warrior`.`Producto`
 -- -----------------------------------------------------
 CREATE TABLE `Warrior`.`Producto` (
-  `id_Producto` INT NOT NULL AUTO_INCREMENT,
-  `Nombre_Producto` VARCHAR(45) NOT NULL,
-  `Tipo_Producto` VARCHAR(45) NOT NULL,
-  `Precio` DECIMAL NOT NULL,
-  `Foto_Producto` BLOB NOT NULL,
-  PRIMARY KEY (`id_Producto`));
+  `id_producto` INT NOT NULL AUTO_INCREMENT,
+  `producto` VARCHAR(45) NOT NULL,
+  `precio` DECIMAL NOT NULL,
+  `imagen` BLOB NOT NULL,
+  PRIMARY KEY (`id_producto`));
 
-
--- -----------------------------------------------------
--- Table `Warrior`.`Peleas`
--- -----------------------------------------------------
-CREATE TABLE `Warrior`.`Peleas` (
-  `id_Peleas` INT NOT NULL AUTO_INCREMENT,
-  `Ganadas` INT NOT NULL,
-  `Perdidas` INT NOT NULL,
-  `Empatadas` INT NOT NULL,
-  `Sin Resultado` INT NOT NULL,
-  PRIMARY KEY (`id_Peleas`));
 
 
 -- -----------------------------------------------------
--- Table `Warrior`.`Competidor`
+-- Table `Warrior`.`Competidores`
 -- -----------------------------------------------------
-CREATE TABLE `Warrior`.`Competidor` (
-  `id_Competidor` INT NOT NULL AUTO_INCREMENT,
-  `id_Usuario` INT NOT NULL,
-  `Descripción_Competidor` VARCHAR(255) NULL,
-  `Foto_Competidor` BLOB NULL,
-  `Total_Peleas` INT NOT NULL,
+CREATE TABLE `Warrior`.`competidores` (
+  `id_competidor` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(255) NULL,
+  `foto` BLOB NULL,
+  `peleas` INT NOT NULL,
+  `ganadas` INT NOT NULL,
+  `perdidas` INT NOT NULL,
+  `empatadas` INT NOT NULL,
+  `sin_resultado` INT NOT NULL,
   PRIMARY KEY (`id_Competidor`),
-  INDEX `Total_Peleas_idx` (`Total_Peleas` ASC),
-  INDEX `id_Usuario_idx` (`id_Usuario` ASC),
-  CONSTRAINT `Total_Peleas`
-    FOREIGN KEY (`Total_Peleas`)
+  INDEX `peleas_idx` (`peleas` ASC),
+  CONSTRAINT `peleas`
+    FOREIGN KEY (`peleas`)
     REFERENCES `Warrior`.`Peleas` (`id_Peleas`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `id_Usuario`
     FOREIGN KEY (`id_Usuario`)
-    REFERENCES `Warrior`.`Usuario` (`id_Usuario`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
 -- -----------------------------------------------------
@@ -102,9 +73,9 @@ CREATE TABLE `Warrior`.`foro` (
 -- Table `Warrior`.`horarios`
 -- -----------------------------------------------------
 CREATE TABLE `Warrior`.`horarios` (
-`id` int(7) NOT NULL auto_increment PRIMARY KEY,
-`foto_horario` BLOB NOT NULL,
-)
+`id_horarios` int(7) NOT NULL auto_increment PRIMARY KEY,
+`imagen` BLOB NOT NULL,
+);
 -- -----------------------------------------------------
 -- Table `Warrior`.`rutinas`
 -- -----------------------------------------------------
@@ -112,4 +83,21 @@ CREATE TABLE `Warrior`.`rutinas` (
 `id_rutina` int(7) NOT NULL auto_increment PRIMARY KEY,
 `producto` varchar(200) NOT NULL default '',
 `link` varchar(200) NOT NULL default '',
-)
+);
+-- -----------------------------------------------------
+-- Table `Warrior`.`contactos`
+-- -----------------------------------------------------
+CREATE TABLE `Warrior`.`contactos` (
+`id_profesional` int(7) NOT NULL auto_increment PRIMARY KEY,
+`profesional` varchar(200) NOT NULL default '',
+`email` varchar(200) NOT NULL default '',
+`telefono` int(20) NOT NULL default '0',
+);
+
+-- -----------------------------------------------------
+-- Table `Warrior`.`cuotas`
+-- -----------------------------------------------------
+CREATE TABLE `Warrior`.`cuotas` (
+`id_cuotas` int(7) NOT NULL auto_increment PRIMARY KEY,
+`imagen` BLOB NOT NULL,
+);
